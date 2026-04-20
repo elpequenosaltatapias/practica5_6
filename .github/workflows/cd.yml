@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Descargar código
         uses: actions/checkout@v4
+      
+      - name: Instalar Ansible
 
       - name: Ejecutar Ansible
         run: ansible-playbook -i inventario.ini playbook.yml
