@@ -1,0 +1,14 @@
+- hosts: local
+  become: yes
+
+  tasks:
+    - name: Crear directorio de ejemplo
+      file:
+        path: /opt/gitops_demo
+        state: directory
+        mode: '0755'
+
+    - name: Crear archivo gestionado por GitOps
+      copy:
+        dest: /opt/gitops_demo/info.txt
+        content: "Configurado automaticamente desde GitOps\n"
