@@ -1,0 +1,16 @@
+name: GitOps Deploy
+
+on:
+  push:
+    branches: [ desarrollo ]
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Descargar código
+        uses: actions/checkout@v4
+
+      - name: Ejecutar Ansible
+        run: ansible-playbook -i inventario.ini playbook.yml
