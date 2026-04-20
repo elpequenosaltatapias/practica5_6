@@ -1,10 +1,9 @@
 - hosts: local
-  become: yes
 
   tasks:
     - name: Crear directorio de ejemplo
       file:
-        path: /opt/gitops_demo
+        path: /home/isard/gitops_demo
         state: directory
         mode: '0755'
 
