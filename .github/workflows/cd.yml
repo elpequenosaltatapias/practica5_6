@@ -2,7 +2,7 @@ name: GitOps Deploy
 
 on:
   push:
-    branches: [ desarrollo ]
+    branches: [ main ]
 
 jobs:
   deploy:
