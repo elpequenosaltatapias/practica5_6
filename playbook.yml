@@ -8,6 +8,6 @@
         mode: '0755'
 
     - name: Crear archivo gestionado por GitOps
-      copy:
+      cop:
         dest: /home/isard/gitops_demo/info.txt
         content: "Configurado automaticamente desde GitOps\n"
