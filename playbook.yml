@@ -16,9 +16,3 @@
       file:
         path: /home/isard/gitops_demo/app/logs
         state: directory
-   
-    - name: Crear usuario nuevo alumno
-      become: yes
-      user:
-        name: alumno_1
-        state: present
