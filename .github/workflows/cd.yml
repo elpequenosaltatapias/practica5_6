@@ -12,11 +12,5 @@ jobs:
       - name: Descargar código
         uses: actions/checkout@v4
       
-      - name: Comprobar sudo en el runner
-        run: |
-          whoami
-          id
-          sudo -n whoami
-      
       - name: Ejecutar Ansible
         run: ansible-playbook -i inventario.ini playbook.yml

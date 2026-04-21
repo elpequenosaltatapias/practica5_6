@@ -12,7 +12,3 @@
         dest: /home/isard/gitops_demo/info.txt
         content: "Configurado automaticamente desde GitOps\n"
     
-    - name: Crear estructura de proyecto
-      file:
-        path: /home/isard/gitops_demo/app/logs
-        state: directory
