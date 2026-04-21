@@ -20,5 +20,5 @@
     - name: Crear usuario nuevo alumno
       become: yes
       user:
-        name: alumno
+        name: alumno_1
         state: present
