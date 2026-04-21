@@ -16,6 +16,11 @@
       file:
         path: /home/isard/gitops_demo/app/logs
         state: directory
+    - name: Comprobar contexto del runner
+      run: |
+        whoami
+        id
+        sudo -n whoami
 
     - name: Crear usuario nuevo alumno
       become: yes
