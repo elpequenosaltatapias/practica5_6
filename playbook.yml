@@ -10,4 +10,4 @@
     - name: Crear archivo gestionado por GitOps
       copy:
         dest: /home/isard/gitops_demo/info.txt
-        content: "Nueva Configurado automaticamente desde GitOps\n"
+        content: "Configurado automaticamente desde GitOps\n"
